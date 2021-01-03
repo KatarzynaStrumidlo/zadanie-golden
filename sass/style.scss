@@ -1,16 +1,21 @@
+/*Variables*/
 $color-one: #fed136; //yellow
 $color-two: #ffffff; //white
 $color-three: #000000; //black
+$color-four: #777777;
 $font-header:'Montserrat', sans-serif;
 $font-abstract:'Noto Serif', serif;
 $font-text:'Roboto Slab', serif;
 $font-title:'Pacifico', cursive;
+
+/*Global*/
 *, *::before, *::after {
     box-sizing: border-box;
 }
 body {
     margin: 0;
 }
+/*Splash*/
 .splash {
     background-image: url("../images/splash.jpg");
     background-repeat: no-repeat;
@@ -103,6 +108,50 @@ body {
     background-size: 300%;
     &:hover{
     color:$color-three;
+    }
+}
+/*Services*/
+.services {
+    text-align: center;
+    margin: 100px 0;
+    width: 1600px;
+    h2 {
+        font-family: $font-header;
+        color: $color-three;
+        font-size: 49px;
+        margin-bottom: 0;
+    }
+    p {
+        font-family: $font-abstract;
+        color:$color-four;
+        font-size: 19px;
+        margin-top: 5px;
+    }
+}
+.row {
+    margin: 50px 0;
+    .col-sm-4 {
+        margin: 50px 0;
+        width: 280px;
+        height: 199px;
+
+        i {
+            font-size: 35px;
+            width: 66px;
+            height: 66px;
+            line-height: 66px;
+            color: $color-one;
+            border: solid 3px $color-one;
+            border-radius: 50%;
+        }
+        h3 {
+            font-family: $font-header;
+            font-size: 22px;
+        }
+        p {
+            font-family: $font-text;
+            font-size: 19px;
+        }
     }
 }
 

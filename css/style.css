@@ -1,3 +1,5 @@
+/*Variables*/
+/*Global*/
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -6,6 +8,7 @@ body {
   margin: 0;
 }
 
+/*Splash*/
 .splash {
   background-image: url("../images/splash.jpg");
   background-repeat: no-repeat;
@@ -112,5 +115,56 @@ body {
 
 .btn:hover {
   color: #000000;
+}
+
+/*Services*/
+.services {
+  text-align: center;
+  margin: 100px 0;
+  width: 1600px;
+}
+
+.services h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+  font-size: 49px;
+  margin-bottom: 0;
+}
+
+.services p {
+  font-family: "Noto Serif", serif;
+  color: #777777;
+  font-size: 19px;
+  margin-top: 5px;
+}
+
+.row {
+  margin: 50px 0;
+}
+
+.row .col-sm-4 {
+  margin: 50px 0;
+  width: 280px;
+  height: 199px;
+}
+
+.row .col-sm-4 i {
+  font-size: 35px;
+  width: 66px;
+  height: 66px;
+  line-height: 66px;
+  color: #fed136;
+  border: solid 3px #fed136;
+  border-radius: 50%;
+}
+
+.row .col-sm-4 h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+}
+
+.row .col-sm-4 p {
+  font-family: "Roboto Slab", serif;
+  font-size: 19px;
 }
 /*# sourceMappingURL=style.css.map */
