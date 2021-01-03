@@ -167,4 +167,77 @@ body {
   font-family: "Roboto Slab", serif;
   font-size: 19px;
 }
+
+/*Portfolio*/
+.portfolio {
+  text-align: center;
+  width: 1600px;
+  height: 1350px;
+  background-color: #f7f7f7;
+  margin: 100px 0;
+}
+
+.portfolio h3 {
+  padding-top: 120px;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 49px;
+  color: #000000;
+}
+
+.portfolio .abstract {
+  margin: 0;
+  padding-top: 26px;
+  padding-bottom: 80px;
+  font-family: "Noto Serif", serif;
+  font-size: 19px;
+  color: #777777;
+}
+
+.portfolio .row {
+  height: 393px;
+  margin: 0 35px 48px 35px;
+}
+
+.portfolio .row .inside {
+  padding: 0 20px;
+  text-align: center;
+  height: 393px;
+  width: 290px;
+}
+
+.portfolio .row .inside img {
+  width: 290px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.portfolio .row .inside .inside-body {
+  background-color: #ffffff;
+  width: 290px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 20px;
+  position: absolute;
+  left: 8%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.portfolio .row .inside .inside-body h5 {
+  margin: 3px 0;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
+.portfolio .row .inside .inside-body p {
+  margin: 3px 0;
+  color: #777777;
+  font-family: "Noto Serif", serif;
+  font-size: 16px;
+}
 /*# sourceMappingURL=style.css.map */

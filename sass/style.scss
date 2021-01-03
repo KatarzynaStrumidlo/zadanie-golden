@@ -2,7 +2,8 @@
 $color-one: #fed136; //yellow
 $color-two: #ffffff; //white
 $color-three: #000000; //black
-$color-four: #777777;
+$color-four: #777777; //grey text
+$color-five: #f7f7f7; //grey background
 $font-header:'Montserrat', sans-serif;
 $font-abstract:'Noto Serif', serif;
 $font-text:'Roboto Slab', serif;
@@ -151,6 +152,70 @@ body {
         p {
             font-family: $font-text;
             font-size: 19px;
+        }
+    }
+}
+/*Portfolio*/
+.portfolio {
+    text-align: center;
+    width: 1600px;
+    height: 1350px;
+    background-color: $color-five;
+    margin: 100px 0;
+
+    h3 {
+        padding-top: 120px;
+        margin: 0;
+        font-family: $font-header;
+        font-size: 49px;
+        color: $color-three;
+    }
+    .abstract {
+        margin: 0;
+        padding-top: 26px;
+        padding-bottom: 80px;
+        font-family: $font-abstract;
+        font-size: 19px;
+        color: $color-four;
+    }
+
+    .row {
+        height: 393px;
+        margin: 0 35px 48px 35px;
+        .inside{
+            padding: 0 20px;
+            text-align: center;
+            height: 393px;
+            width: 290px;
+            img {
+                width: 290px;
+                height: 300px;
+                object-fit: cover;
+                position: relative;
+                margin-bottom: 0;
+            }
+            .inside-body{
+                background-color: $color-two;
+                width: 290px;
+                margin-top: 0;
+                margin-bottom: 0;
+                padding: 20px;
+                position: absolute;
+                left: 8%;
+                object-fit: cover;
+                h5{
+                    margin: 3px 0;
+                    color: $color-three;
+                    font-family: $font-header;
+                    font-size: 20px;
+                }
+                p{
+                    margin: 3px 0;
+                    color: $color-four;
+                    font-family: $font-abstract;
+                    font-size: 16px;
+                }
+            }
         }
     }
 }
