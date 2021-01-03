@@ -1,3 +1,10 @@
+$color-one: #fed136; //yellow
+$color-two: #ffffff; //white
+$color-three: #000000; //black
+$font-header:'Montserrat', sans-serif;
+$font-abstract:'Noto Serif', serif;
+$font-text:'Roboto Slab', serif;
+$font-title:'Pacifico', cursive;
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -5,11 +12,12 @@ body {
     margin: 0;
 }
 .splash {
-    background-image: url('https://i.postimg.cc/tCxqjKNW/splash.jpg');
+    background-image: url("../images/splash.jpg");
     background-repeat: no-repeat;
     text-align: center;
     display: flex;
     height: 100vh;
+    width: 1600px;
     background-position: center center;
     background-size: cover;
     position: relative;
@@ -24,44 +32,77 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
-.title {
-    margin: 20px;
-    padding: 0;
-}
-.navigation {
-    margin: 20px;
-    padding-top: 20px;
+    height: 95px;
 
-    a {
-        text-decoration: none;
-        color: white;
-        padding-left: 20px;
+    h1 {
+        margin-top: 20px;
+        padding: 0px;
+        color: $color-one;
+        font-family: $font-title;
+        font-size: 30px;
+        font-style: italic;
+        font-weight: lighter;
+    }
+    ul {
+        margin-top: 35px;
+        display: inline-block;
+
+        li, a {
+            display: inline-block;
+            text-decoration: none;
+            color:$color-two;
+            font-family: $font-header;
+            font-weight: 100;
+            font-size: 18px;
+            padding-left: 20px;
+        }
+        a:hover {
+            color: $color-one;
+        }
     }
 }
 .splash-inner {
-    color: white;
-    margin: auto;
+    color: $color-two;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    .one {
+        font-family: $font-abstract;
+        font-size: 46px;
+        margin-bottom: 20px;
+        font-weight: 100;
+    }
+    .two {
+        margin-top: 20px;
+        margin-bottom: 5px;
+        padding: 0;
+        font-family: $font-header;
+        font-size: 92px;
+        width: 1600px;
+        font-weight: 1000;
+    }
 }
 .btn {
     display: inline-block;
-    margin: 24px auto 0 auto;
-    border: solid 2px white;
-    color: white;
+    height: 65px;
+    width: 240px;
+    margin-top: 20px;
+    line-height: 65px;
+    background-color: $color-one;
+    border: solid 2px $color-one;
+    color:$color-two;
     text-decoration: none;
-    font-size: 16px;
-    padding: 10px 20px;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: $font-header;
     border-radius: 5px;
     text-align: center;
     cursor: pointer;
     background-position: 100% 0;
     background-size: 300%;
     &:hover{
-    color: grey;
+    color:$color-three;
     }
 }
 
