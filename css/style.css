@@ -240,4 +240,32 @@ body {
   font-family: "Noto Serif", serif;
   font-size: 16px;
 }
+
+/*Footer*/
+.row {
+  margin: 30px 0 40px 0;
+}
+
+.row .copyright {
+  font-style: "Montserrat", sans-serif;
+  font-size: 18px;
+  padding-right: 90px;
+  text-align: right;
+}
+
+.row .media {
+  padding-top: 10px;
+  padding-left: 80px;
+}
+
+.row .media i {
+  font-size: 15px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+  background: #000000;
+  border-radius: 50%;
+}
 /*# sourceMappingURL=style.css.map */
