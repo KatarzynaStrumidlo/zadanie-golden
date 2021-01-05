@@ -5,7 +5,8 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1800px;
 }
 
 /*Splash*/
@@ -16,7 +17,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 100vh;
-  width: 1600px;
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -40,7 +40,7 @@ body {
 }
 
 .navi h1 {
-  margin-top: 20px;
+  margin-right: 50px;
   padding: 0px;
   color: #fed136;
   font-family: "Pacifico", cursive;
@@ -89,7 +89,7 @@ body {
   padding: 0;
   font-family: "Montserrat", sans-serif;
   font-size: 92px;
-  width: 1600px;
+  max-width: 1600px;
   font-weight: 1000;
 }
 
@@ -120,8 +120,7 @@ body {
 /*Services*/
 .services {
   text-align: center;
-  margin: 100px 0;
-  width: 1600px;
+  margin: 100px auto;
 }
 
 .services h2 {
@@ -142,13 +141,12 @@ body {
   margin: 50px 0;
 }
 
-.row .col-sm-4 {
+.row .serv {
   margin: 50px 0;
-  width: 280px;
   height: 199px;
 }
 
-.row .col-sm-4 i {
+.row .serv i {
   font-size: 35px;
   width: 66px;
   height: 66px;
@@ -158,12 +156,12 @@ body {
   border-radius: 50%;
 }
 
-.row .col-sm-4 h3 {
+.row .serv h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
 }
 
-.row .col-sm-4 p {
+.row .serv p {
   font-family: "Roboto Slab", serif;
   font-size: 19px;
 }
@@ -171,10 +169,9 @@ body {
 /*Portfolio*/
 .portfolio {
   text-align: center;
-  width: 1600px;
-  height: 1350px;
   background-color: #f7f7f7;
-  margin: 100px 0;
+  margin: 100px auto;
+  padding-bottom: 100px;
 }
 
 .portfolio h3 {
@@ -194,71 +191,61 @@ body {
   color: #777777;
 }
 
-.portfolio .row {
-  height: 393px;
-  margin: 0 35px 48px 35px;
-}
-
-.portfolio .row .inside {
-  padding: 0 20px;
+.portfolio .one {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   text-align: center;
-  height: 393px;
-  width: 290px;
+  margin-bottom: 20px;
 }
 
-.portfolio .row .inside img {
-  width: 290px;
+.portfolio .one img {
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
-  margin-bottom: 0;
+  margin: 0;
 }
 
-.portfolio .row .inside .inside-body {
-  background-color: #ffffff;
-  width: 290px;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 20px;
-  position: absolute;
-  left: 8%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.portfolio .row .inside .inside-body h5 {
-  margin: 3px 0;
+.portfolio .one h5 {
+  margin: 0;
+  padding: 15px 0;
   color: #000000;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
+  background-color: #ffffff;
 }
 
-.portfolio .row .inside .inside-body p {
-  margin: 3px 0;
+.portfolio .one p {
+  margin: 0;
+  padding-bottom: 15px;
   color: #777777;
   font-family: "Noto Serif", serif;
   font-size: 16px;
+  background-color: #ffffff;
 }
 
 /*Footer*/
-.row {
+footer .row {
   margin: 30px 0 40px 0;
 }
 
-.row .copyright {
+footer .row .copyright {
   font-style: "Montserrat", sans-serif;
   font-size: 18px;
   padding-right: 90px;
   text-align: right;
 }
 
-.row .media {
+footer .row .media {
   padding-top: 10px;
   padding-left: 80px;
 }
 
-.row .media i {
+footer .row .media i {
   font-size: 15px;
   width: 40px;
   height: 40px;
@@ -267,5 +254,54 @@ body {
   color: #ffffff;
   background: #000000;
   border-radius: 50%;
+}
+
+/* Media */
+@media (max-width: 767px) {
+  body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .splash .splash-inner {
+    max-width: 700px;
+    margin-top: 50px;
+  }
+  .splash .splash-inner .one {
+    font-size: 30px;
+  }
+  .splash .splash-inner .two {
+    font-size: 40px;
+  }
+  .splash .splash-inner .btn {
+    font-size: 20px;
+  }
+  .splash .navi {
+    text-align: left;
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    margin-right: 0;
+  }
+  .splash .navi h1 {
+    margin-left: 100px;
+  }
+  .splash .navi li {
+    display: block;
+  }
+  .splash .navi li a {
+    padding-bottom: 5px;
+  }
+  .portfolio .one {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .portfolio .one h5, .portfolio .one p {
+    margin: auto;
+    max-width: 300px;
+  }
+  footer .row .media, footer .row .contact {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
